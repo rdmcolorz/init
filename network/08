@@ -1,0 +1,2 @@
+ping slash16.org > get ip address
+whois 54.230.142.139 | grep 'OrgName' > get provider name  
