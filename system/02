@@ -1,1 +1,2 @@
-hostname new_hostname
+#!/bin/bash
+hostname tyang

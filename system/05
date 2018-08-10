@@ -1,1 +1,1 @@
-ps -ef | grep "ssh"
+service ssh state
