@@ -1,0 +1,6 @@
+echo "dpm-master.42.us.org."
+# command : dig +short -x 10.51.1.81 
+# dig (domain information groper)
+# network administration command-line tool for querying DNS servers
+# -x : for reverse lookups
+# +short : get short form of answer

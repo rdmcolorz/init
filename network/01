@@ -1,1 +1,6 @@
-ifconfig -a | sed -E 's/[[:space:]:].*//;/^$/d'
+ifconfig | expand | cut -c 1-8 | sort | uniq -u | awk -F: '{print $1;}'
+# expand : turns tabs into spaces
+# cut -c 1-8 : extracts first 8 characters of each line
+# sort : sorts the lines
+# uniq -u : prints only unique lines, and remove blank lines.
+# awk -F : prints first field before a colon

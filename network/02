@@ -1,1 +1,6 @@
 networksetup -listallhardwareports
+# http://osxdaily.com/2014/09/03/list-all-network-hardware-from-the-command-line-in-os-x/
+# ethernet refers to LAN (local area network), connected network of computers
+# in a small area.
+# ethernet interface refers to a circuit board or card installed in a PC as a 
+# network client.
