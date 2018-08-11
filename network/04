@@ -1,1 +1,7 @@
-route -n get default | grep 'gateway' | awk '{print $2}'
+route get default | awk '/gateway/{print $2}'
+
+# default gateway serves as a access point or IP router that a networked
+# computer uses to send information to a computer in another network or the 
+# internet.
+
+# route command to view and manipulate the IP routing table.

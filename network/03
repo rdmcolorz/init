@@ -1,1 +1,14 @@
 ifconfig en1 | awk '/ether/{print $2}'
+# en1 refers to wifi card
+# MAC address is given to a network adapter when it is manufactured.
+#
+# the NIC (network interface card) turns data to electric signal and
+# transmit it over the network.
+#
+# so a MAC is given to a NIC when produced. 
+#
+# use ARP (address resolution protocol) to map IP to MAC addresses and
+# vice versa.
+#
+# awk '/ether/{print $2} prints the second item seperated by spaces on the 
+# line with the 'ether' word
