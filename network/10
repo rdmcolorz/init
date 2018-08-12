@@ -1,1 +1,4 @@
 traceroute slash16.org
+
+# traceroute is a computer network diagnostic tool for displaying the route
+# and measuring transit delays of packets across the IP network.

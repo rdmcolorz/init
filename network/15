@@ -1,1 +1,3 @@
-echo "intra.42.fr 46.19.122.85" >> /etc/hosts
+sudo echo "46.19.122.85 intra.42.fr" >> /etc/hosts
+
+# since we don't have sudo access, we cannot modify the file.

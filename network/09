@@ -1,2 +1,5 @@
 echo "163.172.250.11"
+
 # nslookup 42.fr
+# external ip is the address assigned to you by your ISP (Internet service provider)
+# and is also how the internet and all other computers outside of LAN see you.

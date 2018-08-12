@@ -1,1 +1,7 @@
-ping -c4 10.51.1.253
+ping -c3 10.51.1.253
+
+# ping command is used to test the ability of the source computer to reach 
+# a specified destination computer.
+
+# -c3 : counts the number of ICMP (Internet control message protocol) 
+# Echo requests to send, in this case 3 times.

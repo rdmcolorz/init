@@ -1,1 +1,6 @@
-echo /etc/hosts
+echo "/etc/hosts"
+
+# https://unix.stackexchange.com/questions/421491/what-is-the-purpose-of-etc-hosts
+# this file started before DNS existed, and has maximum priority, meaning this 
+# file is preferred ahead of any other name system. But as a sigle file, it
+# doesn't scale well, that is why DNS was developed.
