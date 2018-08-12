@@ -1,7 +1,9 @@
 #!/bin/bash
-m1=$(md5sum "/etc/crontab")
+echo \
+"m1=$(md5sum "/etc/crontab")
 m2=$(md5sum "/etc/crontab_copy")
 if [ "$m1" != "$m2" ]; then
 	rm -f "/etc/crontab_copy" && cp /etc/crontab /etc/crontab_copy
 		mail -s "crontab modified" root@localhost.com < /etc/crontab
-fi
+fi" >> /etc/cron.daily/check_crontab.sh
+echo '0 0 * * * root /etc/cron.daily/check_crontab.sh' | crontab
