@@ -1,2 +1,10 @@
 iptables -A INPUT -s 10.0.0.0/8 -j ACCEPT
 iptables -A OUTPUT -d 10.0.0.0/8 -j ACCEPT
+
+# first command authorize the IP to connect to our system.
+# -s sets the source for a particular packet.
+# -d sets the destination hostname, IP, or network for a particular packet.
+# -j jumps to specified target when a packet matches a particular rule.
+# options are (ACCEPT, DROP, QUEUE, RETURN)
+
+# http://ipset.netfilter.org/iptables.man.html

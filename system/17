@@ -1,1 +1,18 @@
 iptables -L
+
+# iptables is the software firewall included in most Linux distributions by
+# default. It provides a quick reference to iptables commands that will
+# create firewall rules that are useful in common scenarios. Including iptables
+# examples of allowing and blocking various services by port, network interface,
+# and source IP address.
+#
+# iptables -L : list current rules that are configured for iptables.
+# google cloud vm in this case doesn't ship with default rule set so it's blank
+# under each header.
+#
+# -A INPUT : -A appends a rule to the end of a chain (INPUT, OUTPUT, FORWARD)
+#			in this case the INPUT chian.
+# -m conntrack : iptables has a set of core functionality, also set of extensions
+#				or modules that provide extra capabilites. 
+# -j ACCEPT : specifies the target of matching packets. Here we tell iptables
+#				that match the preceding criteria should be accepted.

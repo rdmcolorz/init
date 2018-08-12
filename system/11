@@ -1,1 +1,4 @@
 df -h
+
+# https://www.tecmint.com/how-to-check-disk-space-in-linux/
+# -h flag translates size into readable format (mb, gb, etc)

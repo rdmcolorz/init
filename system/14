@@ -1,1 +1,9 @@
 tail -f /var/log/syslog &
+
+# https://kb.iu.edu/d/afnz
+# add '&' to end of command to run in background
+# bring background process to foreground use 'fg'
+# use 'fg %number' to bring desired process back
+# to get the job's PID, use 'jobs -l'
+# to kill a job, use 'kill PID'
+# if that fails, use 'kill -KILL PID'

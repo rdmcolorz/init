@@ -1,1 +1,9 @@
 du -sh /var/*
+
+# du command reports the sizes of directory trees inclusive of all contents and 
+# sizes of individual files.
+
+# -s (suppress / summarize) report only the total disk space occupied by a 
+# directory tree and to suppress individual reports for its subdirectories.
+
+# -h makes it human readable.

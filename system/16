@@ -1,1 +1,19 @@
 echo "crontab"
+
+# crontab is a file which contains the schedule of cron entries to 
+# be run and at specified times. 
+# crontab -e : edit crontab file, or create one if it doesn't exist.
+# crontab -l : list of cronjobs.
+# crontab -r : remove crontab file.
+# crontab -v : display the last time you edited your crontab file.
+#			   (available in some systems)
+# crontab entry syntax:
+#
+#	*     *     *   *    *      command to be executed
+#	-     -     -   -    -
+#	|     |     |   |    |
+#	|     |     |   |    +----- day of week (0 - 6) (Sunday=0)
+#	|     |     |   +------- month (1 - 12)
+#	|     |     +--------- day of month (1 - 31)
+#	|     +----------- hour (0 - 23)
+#	+------------- min (0 - 59)

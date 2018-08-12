@@ -1,1 +1,4 @@
 kill -KILL $(jobs -p)
+
+# https://kb.iu.edu/d/afnz
+# using jobs -p to get all job PIDs, then using it as argument to kill command.

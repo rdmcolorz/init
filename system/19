@@ -1,2 +1,6 @@
 iptables -P INPUT DROP
 iptables -P OUTPUT DROP
+
+# http://ipset.netfilter.org/iptables.man.html
+# -P sets the policy for the chain to the given target, so in this case
+# we drop INPUT and OUTPUT, so no IP could connect to this computer.

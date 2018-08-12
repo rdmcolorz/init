@@ -1,1 +1,5 @@
 who
+
+# who command displays a list of users who are currently logged into the 
+# computer.
+# w command displays additional data and statistics.
