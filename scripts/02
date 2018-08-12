@@ -1,2 +1,10 @@
-echo 'apt-get update && apt-get upgrade >> /var/log/update_script.log' >> ~/apt_update.sh
-# echo '0 4 * * 1 root sh~/apt_update.sh' | crontab
+apt-get update && apt-get upgrade >> /var/log/update_script.log
+# echo '0 4 * * 1 root /init/scripts/03' | crontab
+#	    * * * * * command to be executed
+#	    - - - - -
+#	    | | | | |
+#	    | | | | +----- day of week (0 - 6) (Sunday=0)
+#	    | | | +------- month (1 - 12)
+#	    | | +--------- day of month (1 - 31)
+#	    | +----------- hour (0 - 23)
+#	    +------------- min (0 - 59)

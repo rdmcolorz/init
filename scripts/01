@@ -1,2 +1,6 @@
 #!/bin/bash
-cat /etc/passwd | cut -d ":" -f 1,3,6
+printf "LOGIN / UID / PATH\n"
+cat /etc/passwd | egrep -v "(^#.*|^$)" | awk -F ':' '{print $1, $3, $6}'
+
+# egrep -v "(^#.*|^$)" : filters out the comments
+# awk -F : seperate by ':' and print the 1,3,6 item.
