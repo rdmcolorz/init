@@ -1,1 +1,10 @@
-service ssh state
+service ssh status
+
+# SSH (secure shell) is a cryptographic network protocol for operating 
+# network services securely over an unsecured network.
+# SSH uses public-key cryptography to authenticate the remote computer and
+# allow it to authenticate the user, if necessary.
+# https://en.wikipedia.org/wiki/Secure_Shell
+
+# service command can used to start, stop, and restart daemons and other 
+# services under linux.

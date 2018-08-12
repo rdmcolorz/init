@@ -1,2 +1,11 @@
 #!/bin/bash
 echo "/etc/hostname"
+echo "/etc/hosts"
+
+# change hostname file to new name
+# change hosts file ip to new name
+# https://www.cyberciti.biz/faq/ubuntu-change-hostname-command/
+# in google cloud vm, hostname is part of the default metadata entries that 
+# provide information about the instance and is not possible to manually edit
+# any of the default metadata pairs. you will have to run a startup script to 
+# change the hostname every time you lauch the instance.

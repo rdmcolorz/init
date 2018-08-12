@@ -1,2 +1,7 @@
 #!/bin/bash
 hostname tyang
+
+# https://en.wikipedia.org/wiki/Hostname
+# hostname is the label assigned to a device on a network and is used to
+# distinguish one device from another on a specific network or over the 
+# internet.

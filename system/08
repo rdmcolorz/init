@@ -1,1 +1,17 @@
 echo ~/.ssh/authorized_keys
+
+# rsa keys is a private and public keys based on RSA algorithm. Private key is used for
+# authentication and a symmetric key exchange during establishment of an SSL/TLS
+# session.
+
+# symmetric encryption: encrpyt the messege with key, and send it with the messege
+
+# asymmetric encryption: alice and bob has a private and public key with the RSA
+# algorithm. Mailbox is the public key, and private key is the key to the mailbox
+# exchange public keys, alice sends the file encrypted with bob's public key, then
+# bob can decrpyt it with his private key. Even alice cannot decrypt the messege.
+
+# google cloud manages the keys for you, but it is normally in the .ssh folder
+# https://help.ubuntu.com/community/SSH/OpenSSH/Keys
+# youtube video explaining rsa algorithm:
+# Public Key Cryptography: RSA Encryption Algorithm

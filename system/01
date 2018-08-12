@@ -1,1 +1,7 @@
 echo "/etc/debian_version"
+
+# debian is a free OS (operating system)
+# a OS is the set of basic programs and utilities that makes the computer run
+# at the core of a OS is the kernel. The kernel is the most fundamental program
+# that does all the basic housekeeping and lets you start other programs.
+# debian uses the linux kernel or the FreeBSD kernel.
