@@ -1,6 +1,6 @@
 echo "apt-get update && apt-get upgrade -y >> /var/log/update_script.log" >> daily_upgrade.sh
 mv daily_upgrade.sh /etc/cron.daily
-echo '0 4 * * 1 root /etc/cron.daily/daily_upgrade.sh' | crontab
+echo '0 4 * * 1 root /etc/cron.daily/daily_upgrade.sh' >> /etc/crontab
 
 # echo '0 4 * * 1 root /init/scripts/03' | crontab
 #	    * * * * * command to be executed

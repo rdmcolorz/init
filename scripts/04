@@ -4,6 +4,9 @@ echo \
 m2=$(md5sum "/etc/crontab_copy")
 if [ "$m1" != "$m2" ]; then
 	rm -f "/etc/crontab_copy" && cp /etc/crontab /etc/crontab_copy
-		mail -s "crontab modified" root@localhost.com < /etc/crontab
+		mail -s "***Alert crontab modified!***" root < /etc/crontab
 fi" >> /etc/cron.daily/check_crontab.sh
-echo '0 0 * * * root /etc/cron.daily/check_crontab.sh' | crontab
+echo '0 0 * * * root /etc/cron.daily/check_crontab.sh' >> /etc/crontab
+
+# crontab saves the command to a temp file and checks if it is correct then 
+# saves it to /var/spool/cron/crontabs/root.
