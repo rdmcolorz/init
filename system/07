@@ -1,5 +1,7 @@
-cat /var/run/sshd.pid
+pgrep sshd
 
+# pgrep look up signal process based on name and other attributes.
+# https://linux.die.net/man/1/pgrep
 # SSHD (secure shell daemon) is the daemon program for ssh.
 # daemon is a type of program that runs unobtrusively in the background,
 # rather then under the direct control of a user, waiting to be activated by 
