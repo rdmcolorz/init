@@ -1,5 +1,7 @@
 echo ~/.ssh/authorized_keys
 
+# in /etc/ssh/sshd_config file, it states the Authorized key in the
+# .ssh/authorized_keys file.
 # rsa keys is a private and public keys based on RSA algorithm. Private key is used for
 # authentication and a symmetric key exchange during establishment of an SSL/TLS
 # session.
